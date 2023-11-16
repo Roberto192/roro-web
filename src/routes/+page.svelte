@@ -24,6 +24,10 @@
 				del equipo llamado como roro, pero no del rorro pirrorro del show de caricaturas Johnny
 				Test.
 			</p>
+			<br>
+			<br>
+			<br>
+			<p>Si no por los nombres de Roberto y Rogelio.</p>
 		</div>
 	</div>
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
