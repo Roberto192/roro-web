@@ -21,17 +21,19 @@
 	<div class="flex justify-between w-full">
 		{#each equipo as integrante}
 			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<div
-				class="grid grid-cols-2 justify-center w-full gap-3 transition-all font-mono rounded-lg drop-shadow-2xl shadow-inner shadow-rose-50 bg-slate-100 m-2 p-1"
+			<a class="m-2" href="https://localhost/practicas/{integrante.Name}">
+				<div
+				class="grid grid-cols-2 justify-center w-full gap-3 transition-all font-mono rounded-lg drop-shadow-2xl shadow-inner shadow-rose-50 bg-slate-100 p-1"
 				on:mouseenter={algo}
 				on:mouseleave={algomas}
 			>
 				<img class="w-auto" src={integrante.Image} alt={integrante.Description} />
-				<div>
-					<p class="description text-base hidden transition-all">{integrante.Description}</p>
+				<div class="description hidden">
+					<p class="text-base transition-all">{integrante.Description}</p>
 				</div>
 				<p class="font-semibold text-lg">{integrante.Name}</p>
 			</div>
+			</a>
 		{/each}
 	</div>
 </div>
